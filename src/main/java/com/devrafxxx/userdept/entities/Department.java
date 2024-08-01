@@ -3,17 +3,16 @@ package com.devrafxxx.userdept.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tb_departament")
-public class Departament {
+@Table(name = "tb_department")
+public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-
     private String name;
 
-    public Departament() {}
+    public Department() {
+    }
 
     public Long getId() {
         return id;
